@@ -84,11 +84,11 @@ color = ['#777777','#A95648','#88885A', ]
 
 fig = pl.figure(figsize= (4,3))
 pl.xlabel(r'number $R_0=\eta/\rho$ of secondary infections')
-pl.ylabel('fraction of recovered')
+pl.ylabel(r'fraction of recovered $R(t\rightarrow\infty)$')
 
 fig.tight_layout()
 
-pl.plot(R0,R_inf,color = 'k',lw=2)
+pl.plot(R0,R_inf,color =color[-1],lw=2)
 #pl.plot(R0[R0>1],1-1.0/R0[R0>1])
 
 fig.savefig('R0.pdf')
