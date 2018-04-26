@@ -84,7 +84,7 @@ color = ['#777777','#A95648','#88885A', ]
 
 fig = pl.figure(figsize= (4,3))
 pl.xlabel(r'number $R_0=\eta/\rho$ of secondary infections')
-pl.ylabel('number of recovered')
+pl.ylabel('fraction of recovered')
 
 fig.tight_layout()
 
